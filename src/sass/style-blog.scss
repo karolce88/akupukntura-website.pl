@@ -1,0 +1,156 @@
+@use './colors' as *;
+@use './components' as *;
+@use './fonts' as *;
+
+.header {
+	&__button {
+		display: none;
+	}
+}
+
+.nav {
+	&__menu-container {
+		display: none;
+	}
+	&__mobile-menu {
+		display: none;
+	}
+}
+
+.footer {
+	&__offer {
+		display: none;
+	}
+
+	&__help {
+		display: none;
+	}
+
+	&__box-contact {
+		display: block;
+	}
+}
+
+.main-blog {
+    
+
+
+	.h2-title-sections {
+		position: relative;
+		text-transform: uppercase;
+		font-size: 26px;
+		margin-top: 70px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 30px;
+			height: 4px;
+			border-radius: 4px;
+			bottom: -16px;
+			left: 0px;
+			background: $MAIN-color;
+		}
+	}
+
+	&__svg-bottom-section {
+		vertical-align: bottom;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		margin-top: 60px;
+		width: 100%;
+		padding: 0 14px;
+	}
+
+	&__box {
+        scroll-margin-top: 60px;
+		background-color: $little-white-section;
+		width: 100%;
+		margin: 15px 0;
+		padding: 14px;
+		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		border: 1px solid $little-gray;
+		transition: all 0.5s;
+		box-shadow: 2px 3px 6px $little-gray;
+        float: left;
+        
+		&:hover {
+            border: 1px solid $black;
+			box-shadow: 3px 5px 10px $little-gray-darker;
+		}
+	}
+    
+	&__title {
+        margin: 35px 0 20px 0;
+		font-size: 20px;
+	}
+    
+	&__text {
+        line-height: 21px;
+		margin-bottom: 35px;
+		width: 100%;
+        text-align: justify;
+	}
+
+	&__img-mobile {
+		width: 100%;
+		height: auto;
+		margin-top: 35px;
+        border-radius: 8px;
+	}
+    
+    &__img-desktop {
+        display: none;
+    }
+
+	&__subject-two {
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	&__text-ul {
+		margin: 0 0 20px 20px;
+	}
+
+	&__text-important {
+		font-weight: bold;
+	}
+}
+
+@media (min-width: 768px) {
+    .main-blog {
+        
+        &__img-mobile {
+            display: none;
+		}
+        
+        &__img-desktop {
+            display: block;
+            position: relative;
+            width: 40%;
+            height: auto;
+            float: right;
+            margin: 0 0 20px 20px;
+            border-radius: 8px;
+		}
+
+        &__box {
+            padding: 14px 30px;
+        }
+	}
+}
+
+@media (min-width: 992px) {
+    .main-blog {
+        
+        &__img-desktop {
+            width: 30%;
+		}
+	}
+}

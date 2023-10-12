@@ -1,0 +1,70 @@
+@media (min-width: 576px) {
+	.header {
+		&__box {
+			margin-top: 80px;
+		}
+
+		&__button {
+			margin-top: 55px;
+		}
+
+		&__h1-head {
+			font-size: 30px;
+			line-height: 38px;
+		}
+	}
+	
+	.main {
+		.aboutme {
+			position: relative;
+		}
+
+		.offer {
+			&__container-content {
+	
+				&::after {
+
+					width: 103%;
+				}
+			}
+		}
+
+		.splide {
+			&__text-box-name {
+				bottom: -20px;
+				left: 5px;
+
+				&-item {
+					padding: 6px 20px;
+				}
+			}
+		}
+
+		.info {
+			
+			&__container {
+				padding: 15px;
+			}
+		}
+
+		.faq {
+			&__question-faq {
+				font-size: 14px;
+			}
+			
+			&__answer-faq {
+				font-size: 14px;
+			}
+
+			&__faq-box {
+				height: 45px;
+			}
+
+			&__panel-faq {
+				line-height: 21px;
+			}
+		}
+	}
+
+
+}

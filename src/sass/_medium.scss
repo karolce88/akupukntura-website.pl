@@ -1,0 +1,174 @@
+@media (min-width: 768px) {
+	.header {
+		&__h1-head {
+			font-size: 30px;
+			z-index: 10;
+		}
+
+		&__paragraph {
+			padding-top: 20px;
+			font-size: 26px;
+		}
+
+		&__box {
+			margin-top: 80px;
+		}
+
+		&__button {
+			margin-top: 75px;
+			padding: 10px 28px;
+		}
+	}
+
+	.main {
+
+		.aboutme {
+			scroll-margin-top: 0px;
+
+			&__box-text-title-h2 {
+				font-size: 26px;
+			}
+
+			&__container {
+				display: flex;
+				flex-direction: row;
+				align-items: flex-start;
+				width: 100%;
+			}
+
+			&__box-img {
+				min-width: 350px;
+				display: flex;
+				align-items: flex-start;
+			}
+
+			&__education-container {
+				height: auto;
+				width: 80%;
+			}
+
+		}
+
+		.offer {
+			&__box1-content {
+				width: 60%;
+			}
+
+			&__box1 {
+				display: flex;
+				flex-direction: row;
+			}
+
+			&__box1-img-item {
+				margin: 0px 0px 0px 15px;
+				padding-right: 20px;
+			}
+
+			&__container-content {
+				&::after {
+					width: 102%;
+				}
+			}
+		}
+
+		.trainings {
+			&__text-space {
+				min-width: 450px;
+			}
+
+			.trainings-order {
+				order: 1;
+			}
+
+			.box1-img-item {
+				margin: 35px 0 0 0;
+				max-width: 100%;
+				padding: 0 0 0 14px;
+			}
+
+			.box1-img-item-rev {
+				margin: 35px 0 0 0;
+				padding: 0 14px 0 0px;
+			}
+
+			&__description {
+				display: flex;
+				flex-wrap: nowrap;
+			}
+	
+			&__description-box1 {
+				flex: 0 0 50%;
+				margin-bottom: 0px;
+			}
+	
+			&__description-box2 {
+				flex: 0 0 50%;
+			}
+
+			.button-trainings-space {
+				margin-bottom: 0px;
+			}
+
+			&__education-container {
+				height: auto;
+				width: 80%;
+			}
+		}
+
+		.splide {
+			&__arrow {
+				&--next {
+					right: -50px;
+				}
+				&--prev {
+					left: -50px;
+				}
+			}
+
+			&__text-box-name {
+				bottom: -15px;
+				left: 30px;
+
+				&-item {
+					padding: 6px 20px;
+				}
+			}
+		}
+
+		.info {
+			&__news {
+				flex-direction: row;
+				justify-content: space-between;
+
+				&-container {
+					width: 50%;
+					order: 1;
+				}
+			}
+		}
+
+		.faq {
+			&__question-faq {
+				font-size: 15px;
+			}
+
+			&__answer-faq {
+				font-size: 15px;
+			}
+
+			&__faq-box {
+				height: 38px;
+			}
+
+			&__panel-faq {
+				line-height: 21px;
+			}
+		}
+	}
+
+	.footer {
+		&__box {
+			margin: 35px 60px;
+		}
+	}
+}

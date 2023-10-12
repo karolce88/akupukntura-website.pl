@@ -1,0 +1,144 @@
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes arrowIconMenuOffertItem {
+	from {
+		transform: rotateX(0deg);
+	}
+	to {
+		transform: rotateX(-180deg);
+	}
+}
+
+@keyframes arrowIconMenuOffertItemRev {
+	from {
+		transform: rotateX(180deg);
+	}
+	to {
+		transform: rotateX(0deg);
+	}
+}
+
+@keyframes resizeDesktopLogoo {
+	from {
+		width: 150px;
+		height: auto;
+		// margin-left: 50px;
+	}
+	to {
+		width: 50px;
+		height: auto;
+		margin-left: 10px;
+	}
+}
+
+@keyframes resizeDesktopLogoRevv {
+	from {
+		width: 50px;
+		height: auto;
+		margin-left: 10px;
+	}
+	to {
+		width: 150px;
+		height: auto;
+		// margin-left: 50px;
+	}
+}
+
+@keyframes mediaBarAnim {
+	from {
+		height: 26px;
+	}
+	to {
+		height: 0px;
+		opacity: 0;
+		display: none;
+	}
+}
+
+@keyframes mediaBarAnimRev {
+	from {
+	}
+	to {
+		height: 26px;
+		opacity: 1;
+		display: flex;
+	}
+}
+
+@keyframes showEducationList {
+	from {
+		opacity: 0;
+		height: 0px;
+	}
+	to {
+		opacity: 1;
+		height: auto;
+	}
+}
+
+@keyframes closeEducationList {
+	from {
+		opacity: 1;
+		height: auto;
+	}
+	to {
+		opacity: 0;
+		height: 0px;
+	}
+}
+
+@keyframes showOfferIndications {
+	from {
+		height: 212px;
+	}
+	to {
+		height: auto;
+	}
+}
+
+@keyframes closeOfferIndications {
+	from {
+		height: auto;
+	}
+	to {
+		height: 212px;
+	}
+}
+
+@keyframes rotateIndicationOffer {
+	from {
+		rotate: 0;
+	}
+	to {
+		rotate: 180deg;
+	}
+}
+
+@keyframes rotateIndicationOffer-Rev {
+	from {
+		rotate: 180deg;
+	}
+	to {
+		rotate: 0;
+	}
+}
+
+
+@keyframes mouse-anim {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-55px);
+	}
+}
+
+
+.all-svg-break-sections {
+	width: 100%;
+	height: auto;
+}
